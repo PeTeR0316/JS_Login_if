@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+	<div id="wrap">
+		<form action="https://www.naver.com" method="post" id="frm">
+		<!-- 아이디 패스워드 -->
+		<div id="main">
+			<div>
+				<!-- <p>아이디</p> -->
+				<input type="text" name="userID" id="id" placeholder="아이디">
+				<p id="idChkMsg"> </p>
+			</div>
+			<div>
+				<!-- <p>비밀번호</p> -->
+				<input type="password" name="userPW" id="pw" placeholder="비밀번호">
+				<p id="pwChkMsg"> </p>
+			</div>
+		</div>
+
+		<!-- 로그인 버튼 -->
+		<div>
+			<!-- <p>로그인</p> -->
+			<input type="button" value="로그인" id="login" onclick="fnChk()">
+		</div>
+
+		</form>
+
+		<div id="ac">
+			<a href="#">회원가입</a>
+			<div id="line"></div>
+			<a href="#">아이디 찾기</a>
+			<div id="line"></div>
+			<a href="#">비밀번호 찾기</a>
+		</div>
+	</div>
+
+	<script>
+        function fnChk() {
+            var userId = document.getElementById("id").value;
+            var userPw = document.getElementById("pw").value;
+
+            if(userId == "") {
+                document.getElementById("pwChkMsg").innerHTML = "";
+                document.getElementById("idChkMsg").innerHTML = "<b>필수사항</b>";
+                document.getElementById("idChkMsg").style.color = "red";
+                document.getElementById("id").focus();
+            }
+            else if(userPw == "") {
+                document.getElementById("idChkMsg").innerHTML = "";
+                document.getElementById("pwChkMsg").innerHTML = "<b>필수사항</b>";
+                document.getElementById("pwChkMsg").style.color = "red";
+                document.getElementById("pw").focus();
+            }
+            else {
+                document.getElementById("frm").submit();
+            }
+        }
+    </script>
+</body>
+</html>

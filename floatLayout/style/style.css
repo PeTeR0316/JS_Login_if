@@ -1,0 +1,99 @@
+body{
+	margin-top: 30%;
+}
+
+div#wrap{
+	border: 1px solid #ccc;
+	width: 350px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+div#main {
+	width: 230px;
+	height: 50px;
+	position: relative;
+	margin-left: 15px;
+}
+
+div#main > div:first-child {
+    height: 63px;
+}
+
+#id{
+	background-color: #eee;
+	color: #888;
+	width: 200px;
+	height: 30px;
+	position: relative;
+	margin-top: 12px;
+/*	margin-bottom: 10px;*/
+	border: none;
+}
+
+#pw{
+	background-color: #eee;
+	color: #888;
+	width: 200px;
+	height: 30px;
+	position: relative;
+	border: none;
+}
+
+div#main > div > p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#login{
+	background-color: #e6a029;
+	text-align: center;
+	position: relative;
+	left: 235px;
+	top: -38px;
+	width: 100px;
+	height: 83px;
+	color: #fff;
+	border: none;
+}
+
+#login:hover{
+	background-color: #d6921e;
+	text-align: center;
+	position: relative;
+	left: 235px;
+	top: -38px;
+	width: 100px;
+	height: 83px;
+	color: #fff;
+	border: none;
+}
+
+div#login > p:hover{
+	cursor: pointer;
+}
+
+div#ac {
+	text-align: center;
+	position: relative;
+	top: -14px;
+	border-top: 1px solid #ccc;
+	padding: 7px;
+}
+
+div#ac > a {
+	display: inline-block;
+	text-decoration: none;
+	color: #555
+}
+
+div#line {
+	border-left: 1px solid #ccc;
+	height: 15px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
